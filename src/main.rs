@@ -64,7 +64,7 @@ impl List {
 
     fn insert_at(&mut self, data: i32, idx: usize) {
         if idx > self.len {
-            println!("the given index is out of range");
+            println!("index is out of range");
             return;
         }
 
@@ -105,7 +105,7 @@ impl List {
 
     fn delete_at(&mut self, index: usize) {
         if index > self.len {
-            println!("the given index is out of range");
+            println!("index is out of range");
             return;
         }
 
@@ -137,16 +137,4 @@ fn main() {
     list.insert(17);
 
     list.print();
-    println!(
-        "[LEN]: {}\n-------------------------------------\n",
-        list.len
-    );
-    // list.insert_at(33, 8);
-    // list.delete();
-    list.delete_at(9);
-    list.print();
-    println!(
-        "[LEN]: {}\n-------------------------------------\n",
-        list.len
-    );
 }
